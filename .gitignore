@@ -1,23 +1,58 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ============================
+# 📦 DEPENDENCIAS
+# ============================
+node_modules/
+**/node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# ============================
+# 🧪 TESTING
+# ============================
+coverage/
 
-# testing
-/coverage
+# ============================
+# 🏗️ BUILD / PRODUCCIÓN
+# ============================
+build/
+dist/
+**/build/
+**/dist/
 
-# production
-/build
-
-# misc
-.DS_Store
+# ============================
+# ⚙️ CONFIGURACIÓN Y ENTORNOS
+# ============================
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# ============================
+# 💾 BASE DE DATOS / ARCHIVOS LOCALES
+# ============================
+*.db
+*.sqlite
+*.sqlite3
+/data/
+backend/tareas.db
+
+# ============================
+# 💻 SISTEMA OPERATIVO
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# 🔧 LOGS Y TEMPORALES
+# ============================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# ============================
+# 🔍 EDITORES
+# ============================
+.vscode/
+.idea/
+*.swp

@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# 🧩 Mini Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un **dashboard administrativo full stack** desarrollado con **React**, **Express** y **SQLite**, que permite gestionar usuarios (crear, listar, editar y eliminar) desde una interfaz sencilla.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tecnologías Utilizadas
 
-### `npm start`
+### 🖥️ Frontend
+- **React.js** — interfaz dinámica y modular  
+- **Fetch API / Axios** — comunicación con el backend  
+- **CSS personalizado** — tema oscuro  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ⚙️ Backend
+- **Node.js** + **Express.js** — servidor RESTful  
+- **CORS** — habilitado para comunicación entre frontend y backend  
+- **SQLite** — base de datos ligera y persistente  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 📋 Visualización de usuarios en tabla dinámica  
+- ➕ Agregar nuevos usuarios (nombre + email)  
+- ✏️ Editar usuarios existentes  
+- ❌ Eliminar usuarios  
+- 🔍 Buscar usuarios por nombre o email  
+- 🔢 Contador automático del total de usuarios  
+- 🎨 Diseño responsive con tema oscuro y acento amarillo (#FFD700)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🗂️ Estructura del Proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+mini-admin-dashboard/
+│
+├── backend/
+│   ├── server.js            # Servidor Express
+│   ├── db.js                # Configuración de SQLite
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.js           # Lógica principal del dashboard
+│   │   ├── App.css          # Estilos del dashboard
+│   │   ├── components/      # Componentes (Formulario, Tabla, etc.)
+│   │   └── index.js
+│   ├── public/
+│   │   └── index.html
+│   └── package.json
+│
+└── README.md
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧱 API Endpoints
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Método | Endpoint | Descripción |
+|--------|-----------|--------------|
+| **GET** | `/api/users` | Obtiene todos los usuarios |
+| **POST** | `/api/users` | Crea un nuevo usuario |
+| **PUT** | `/api/users/:id` | Actualiza un usuario existente |
+| **DELETE** | `/api/users/:id` | Elimina un usuario |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 💾 Base de Datos (SQLite)
 
-## Learn More
+El archivo de base de datos se crea automáticamente si no existe, y contiene una tabla `users` con las siguientes columnas:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Campo | Tipo |
+|-------|------|
+| id | INTEGER (PK, autoincrement) |
+| name | TEXT |
+| email | TEXT |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ✨ Vista del Proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Ejemplo del dashboard en funcionamiento:
 
-### Analyzing the Bundle Size
+![Mini Admin Dashboard](./preview.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> Muestra total de usuarios, formulario de alta, buscador, tabla y botones de acción con estilo amarillo y fondo negro.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 👨‍💻 Autor
 
-### Advanced Configuration
+**Mini Admin Dashboard**  
+Desarrollado  *SHS*  
+Stack: React + Node.js + Express + SQLite  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> 🖤 Proyecto full stack funcional, modular y escalable.
