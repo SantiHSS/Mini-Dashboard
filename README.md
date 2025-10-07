@@ -83,7 +83,7 @@ El archivo de base de datos se crea automáticamente si no existe, y contiene un
 
 Ejemplo del dashboard en funcionamiento:
 
-![Mini Admin Dashboard](./preview.png)
+![Mini Admin Dashboard](./preview.PNG)
 
 > Muestra total de usuarios, formulario de alta, buscador, tabla y botones de acción con estilo amarillo y fondo negro.
 
